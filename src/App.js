@@ -19,7 +19,7 @@ function App() {
       <div className="container">
         <div className="row">
           {newsItem.articles.map((article, index) => (
-            <Card key={index} title={article.title}></Card>
+            <Card key={index} title={article.title} content = {article.description} img= {article.urlToImage} author={article.author} url = {article.url} source = {article.source.name}></Card>
           ))}
         </div>
       </div>
